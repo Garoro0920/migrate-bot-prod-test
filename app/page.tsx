@@ -1,14 +1,15 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
+
+export const metadata: Metadata = {
+  title: 'migrate-bot prod test',
+  description: 'Sample Pages Router app for migrate-bot E2E test',
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>migrate-bot prod test</title>
-        <meta name="description" content="Sample Pages Router app for migrate-bot E2E test" />
-      </Head>
       <Header />
       <main style={{ padding: '2rem' }}>
         <h1>Hello from Pages Router</h1>
